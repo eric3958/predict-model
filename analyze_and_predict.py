@@ -54,5 +54,10 @@ hot_candidates = df[
 print("\n🔥 潛在推薦熱門影片（科技產品類）：\n")
 print(hot_candidates[["title", "trend_score", "recommend_score", "view_growth", "collected_at"]])
 
-hot_candidates.to_csv("viral_candidates.csv", index=False)
-print("\n✅ 結果已儲存到 viral_candidates.csv")
+from datetime import datetime
+
+today = datetime.now().strftime("%Y%m%d")
+filename = f"viral_candidates_tech_{today}.csv"
+hot_candidates.to_csv(filename, index=False)
+print(f"\n✅ 結果已儲存到 {filename}")
+

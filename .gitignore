@@ -1,1 +1,19 @@
+# macOS 系統檔案
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# 虛擬環境資料夾
 ai-trend-env/
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+# log 檔案
+*.log
+
+# CSV暫存或輸出檔（依需求調整）
+viral_candidates.csv
+viral_candidates_*.csv
